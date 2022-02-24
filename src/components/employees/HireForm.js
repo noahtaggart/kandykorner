@@ -85,7 +85,7 @@ export const HireForm = () => {
                                 update(copy)
                             }
                         }>
-                            <option  key="" value="" disabled selected hidden>Choose a location...</option>
+                            <option  key="" value="" disabled  hidden>Choose a location...</option>
                             {locations.map(location => <option key={location.id} value={location.id}>{location.name}</option>)}
                     
                         
