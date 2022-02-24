@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useHistory } from "react-router-dom";
+import { getLocations } from "../ApiManager";
 
 
 export const HireForm = () => {
@@ -17,8 +18,7 @@ export const HireForm = () => {
     //fetches locations and stores in state
     const [locations, updateLocations] = useState([])
     useEffect(() => {
-        fetch("http://localhost:8088/locations")
-            .then(response => response.json())
+        getLocations()
             .then(
                 (location) => {
                     updateLocations(location)
