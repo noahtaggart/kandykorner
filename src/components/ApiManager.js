@@ -11,3 +11,8 @@ export const getLocations = () => {
     return fetch("http://localhost:8088/locations")
     .then(response => response.json())
 }
+
+export const getPurchases = () => {
+    return fetch("http://localhost:8088/purchases")
+    .then(response => response.json())
+}

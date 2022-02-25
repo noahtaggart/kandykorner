@@ -16,7 +16,7 @@ export const NavBar = (props) => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/employees">Employees</Link>
             </li>
-            <li className="navbar_item">
+            <li className="navbar__item ">
             <Link className="navbar__link" to="#"
                 onClick={
                     () => {
